@@ -1,0 +1,379 @@
+:root {
+    --blue: #092c67;
+    --navy: #061f45;
+    --gold: #f7b731;
+    --muted: #6b7280;
+    --light: #f5f7fb
+}
+
+* {
+    box-sizing: border-box
+}
+
+.text-justify {
+    text-align: justify
+}
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1f2937;
+    overflow-x: hidden
+}
+
+.topbar {
+    background: var(--navy);
+    color: white;
+    font-size: 14px
+}
+
+.brand-logo {
+    font-weight: 900;
+    color: var(--blue);
+    font-size: 26px;
+    line-height: 1
+}
+
+.brand-logo span {
+    color: var(--gold)
+}
+
+
+.navbar {
+    background: transparent;
+        transition: all 0.3s ease;
+        /* padding: 15px 0; */
+}
+#navbar.scrolled {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    color: #fff !important;
+    padding: 28px 15px;
+    transition: color 0.3s;
+}
+#navbar.scrolled .nav-link {
+    color: #000 !important;
+    /* padding: 15px 15px; */
+}
+#navbar.scrolled {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+.contact-info a{
+    color: #000 !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+}
+.contact-info p{
+    color: #000 !important;
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .active {
+    color: var(--gold) !important;
+}
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .13);
+    border-radius: 0
+}
+
+.hero {
+    position: relative;
+    min-height: 720px;
+    background: #123;
+    overflow: hidden
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(1.03);
+    transition: opacity 1s, transform 4s;
+    background-size: cover;
+    background-position: center
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.hero-slide:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(3, 18, 48, .78), rgba(3, 18, 48, .35))
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: 900;
+    max-width: 780px
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 620px
+}
+
+.btn-gold {
+    background: var(--gold);
+    border: none;
+    color: #111;
+    font-weight: 800;
+    padding: 14px 30px;
+    border-radius: 4px
+}
+
+.btn-gold:hover {
+    background: #e4a71b
+}
+
+.feature-card {
+    background: #fff;
+    margin-top: -60px;
+    position: relative;
+    z-index: 3;
+    padding: 30px 35px 45px 35px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .12);
+    border-radius: 3px;
+    height: 100%;
+    transition: .35s
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) !important;
+    background-color: #e4a71b;
+}
+
+.feature-card img {
+    width: 58px
+}
+
+.section-pad {
+    padding: 95px 0
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase
+}
+
+.title {
+    font-weight: 900;
+    color: var(--blue)
+}
+
+.about-img,
+.rounded-img {
+    border-radius: 8px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .16)
+}
+
+.counter-wrap {
+    background: linear-gradient(90deg, var(--blue), #0c4793);
+    color: #fff
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: 900
+}
+
+.md-section {
+    background: #f4f7fc
+}
+
+.video-box {
+    height: 360px;
+    background: url('https://mptravelsltd.com/wp-content/uploads/2025/08/corporate-2-img-1.png') center/cover;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden
+}
+
+.video-box:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 31, 69, .42)
+}
+
+.play {
+    position: relative;
+    z-index: 2;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    animation: pulse 1.8s infinite
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(247, 183, 49, .65)
+    }
+
+    100% {
+        box-shadow: 0 0 0 28px rgba(247, 183, 49, 0)
+    }
+}
+
+.card-service,
+.article-card,
+.info-card {
+    border: 0;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+    height: 100%;
+    transition: .3s;
+    border-radius: 7px;
+    overflow: hidden
+}
+
+.card-service:hover,
+.article-card:hover,
+.info-card:hover {
+    transform: translateY(-8px)
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eef4ff;
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px
+}
+
+.icon-circle img {
+    width: 42px
+}
+
+.page-hero {
+    padding: 120px 0;
+    background: linear-gradient(rgba(6, 31, 69, .75), rgba(6, 31, 69, .75)), url('https://mptravelsltd.com/wp-content/uploads/2025/08/corporate-2-img-1.png') center/cover;
+    color: #fff
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900
+}
+
+.process-item {
+    position: relative;
+    padding: 25px 25px 25px 70px;
+    border-left: 3px solid var(--gold);
+    background: #fff;
+    margin-bottom: 18px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .06)
+}
+
+.process-item:before {
+    content: attr(data-step);
+    position: absolute;
+    left: -25px;
+    top: 25px;
+    width: 48px;
+    height: 48px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 900
+}
+
+.category-pill {
+    background: #fff;
+    border-left: 4px solid var(--gold);
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06)
+}
+
+footer {
+    background: #061f45;
+    color: #dbeafe
+}
+
+footer a {
+    color: #dbeafe;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: var(--gold)
+}
+
+.back-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    background: var(--gold);
+    color: #111;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: none
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: all .8s
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none
+}
+
+@media(max-width:991px) {
+    .hero h1 {
+        font-size: 40px
+    }
+
+    .hero,
+    .hero-content {
+        min-height: 590px
+    }
+
+    .navbar .nav-link {
+        padding: 12px
+    }
+
+    .feature-card {
+        margin-top: 0
+    }
+
+    .topbar {
+        text-align: center
+    }
+}
