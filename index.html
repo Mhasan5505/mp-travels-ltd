@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="icon" href="image/LOGO-ALL-03-1.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-     <!-- Google Fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">   
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,9 +27,10 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-                            data-bs-toggle="dropdown">Recruitment & Training</a>
-                        <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="recruitmentDropdown" href="#" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">Recruitment & Training</a>
+                        <ul class="dropdown-menu" aria-labelledby="recruitmentDropdown">
                             <li><a class="dropdown-item" href="recruitment-criteria.html">Recruitment Criteria</a></li>
                             <li><a class="dropdown-item" href="recruitment-process.html">Recruitment Process</a></li>
                             <li><a class="dropdown-item" href="recruitment-categories.html">Recruitment Categories</a>
@@ -62,7 +63,7 @@
     <!-- nav end here  -->
 
     <!-- banner start here -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-slide active" style="background-image:url('image/banner2.jpg')">
             <div class="container hero-content">
                 <div>
@@ -87,12 +88,85 @@
             <div class="container hero-content">
                 <div>
                     <h1>End-to-End Panpower Solutions</h1>
-                    <p>From candidate sourcing to final deployment, we offer comprehensive recruitment and visa processing services to meet employer and employee needs seamlessly.</p>
+                    <p>From candidate sourcing to final deployment, we offer comprehensive recruitment and visa
+                        processing services to meet employer and employee needs seamlessly.</p>
                     <a class="btn btn-gold" href="about.html">learn more</a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active slider-1">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-sm-12">
+                            <div class="slider-caption-box">
+                                <h1 class="slider-title">Build Your <span class="orange-text">Future</span><br>with
+                                    Confidence</h1>
+                                <p class="slider-desc">With government-approved licenses and years of experience, MP
+                                    Travels
+                                    Ltd. ensures your journey abroad begins with trust, support, and proper
+                                    documentation.
+                                </p>
+                                <a href="#" class="btn-learn-more">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slider-2">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-sm-12">
+                            <div class="slider-caption-box">
+                                <h1 class="slider-title-2">Your Trusted <span class="orange-text">Gateway</span><br>to
+                                    Global Employment</h1>
+                                <p class="slider-desc">Providing transparent recruitment and top-notch training
+                                    solutions to
+                                    secure your dream career worldwide.</p>
+                                <a href="#" class="btn-learn-more">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slider-3">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-sm-12">
+                            <div class="slider-caption-box">
+                                <h1 class="slider-title-3">End-to-End<br><span class="orange-text">Manpower</span>
+                                    Solutions
+                                </h1>
+                                <p class="slider-desc">From candidate sourcing to final deployment, we offer
+                                    comprehensive
+                                    recruitment and visa processing services to meet employer and employee needs
+                                    seamlessly.
+                                </p>
+                                <a href="#" class="btn-learn-more">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!-- banner end here -->
 
     <div class="container">
@@ -126,13 +200,16 @@
                 <div class="col-lg-6 reveal">
                     <span class="eyebrow">About</span>
                     <h2 class="title display-5">MP TRAVELS LTD.</h2>
-                    <p class="text-justify p-5 ps-0 m-3 ms-0">MP Travels Ltd. is a sister concern of Samaira Group and one of the most reputable overseas employment agencies in
-                    Bangladesh. We are a fully licensed and authentic recruitment agency, registered in accordance with the laws of the
-                    country. Our license is approved by the Ministry of Labor and Employment, Government of Bangladesh. Our government-approved Travel Agent and Recruiting Agent license number is RL-1128.</p>
-                        <a class="btn btn-gold" href="about.html">Read more</a>
+                    <p class="text-justify p-5 ps-0 m-3 ms-0">MP Travels Ltd. is a sister concern of Samaira Group and
+                        one of the most reputable overseas employment agencies in
+                        Bangladesh. We are a fully licensed and authentic recruitment agency, registered in accordance
+                        with the laws of the
+                        country. Our license is approved by the Ministry of Labor and Employment, Government of
+                        Bangladesh. Our government-approved Travel Agent and Recruiting Agent license number is RL-1128.
+                    </p>
+                    <a class="btn btn-gold" href="about.html">Read more</a>
                 </div>
-                <div class="col-lg-6 reveal"><img class="img-fluid about-img"
-                        src="image/corporate-2-img-1.png"></div>
+                <div class="col-lg-6 reveal"><img class="img-fluid about-img" src="image/corporate-2-img-1.png"></div>
             </div>
         </div>
     </section>
@@ -175,63 +252,69 @@
                     <h2 class="title mb-4">Message From Managing Director</h2>
                     <p class="fw-bold m-0 p-0">Dear Valued Clients, Friends, and Well-wishers,</p>
                     <p class="fw-bold m-0 p-0">Greetings from Bangladesh!</p><br>
-                    <p>MP Travels Ltd. is proud to be one of Bangladesh’s leading and most trusted manpower agencies. Since our inception, we
-                    have consistently delivered quality, cost-effective, and efficient services, earning the trust of our clients worldwide.
-                    Guided by honesty, loyalty, and business integrity, we have expanded our reach across the country, connecting thousands
-                    of skilled and unskilled workers to overseas opportunities—significantly reducing unemployment.
-                    <br> <br>
-                    Our professional approach, targeted training programs, and structured recruitment system ensure candidates are
-                    well-prepared to meet global standards. These achievements inspire us to aim even higher for the future.
-                    <br><br>
-                    Thank you for your continued trust and support.
-                    <br><br>
-                    <span class="fw-bold">Md. Rafiqul Islam</span><br>
-                    Managing Director</p>
+                    <p>MP Travels Ltd. is proud to be one of Bangladesh’s leading and most trusted manpower agencies.
+                        Since our inception, we
+                        have consistently delivered quality, cost-effective, and efficient services, earning the trust
+                        of our clients worldwide.
+                        Guided by honesty, loyalty, and business integrity, we have expanded our reach across the
+                        country, connecting thousands
+                        of skilled and unskilled workers to overseas opportunities—significantly reducing unemployment.
+                        <br> <br>
+                        Our professional approach, targeted training programs, and structured recruitment system ensure
+                        candidates are
+                        well-prepared to meet global standards. These achievements inspire us to aim even higher for the
+                        future.
+                        <br><br>
+                        Thank you for your continued trust and support.
+                        <br><br>
+                        <span class="fw-bold">Md. Rafiqul Islam</span><br>
+                        Managing Director
+                    </p>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- director message end here -->
 
     <!-- video start here -->
-     <section class="container-fluid pt-5">
+    <section class="container-fluid pt-5 mb-5">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 reveal">
                     <h2 class="title">A short video of MP Travels Ltd.</h2>
-                    <p>Take a closer look at MP Travels Ltd., a government-approved overseas recruitment agency committed to connecting talent
-                    with international career opportunities. With years of experience, a wide global network, and a strong ethical
-                    foundation, we’ve helped thousands turn their dreams into reality.
+                    <p>Take a closer look at MP Travels Ltd., a government-approved overseas recruitment agency
+                        committed to connecting talent
+                        with international career opportunities. With years of experience, a wide global network, and a
+                        strong ethical
+                        foundation, we’ve helped thousands turn their dreams into reality.
                 </div>
                 <div class="col-lg-6 reveal">
-                    <div class="video-box">
-                        <div class="play">▶</div>
+                    <div class="video-wrapper">
+                        <video
+                            data-lazy-load="https://mptravelsltd.com/wp-content/uploads/2025/08/MP-Travels-LTD-video.mp4"
+                            playsinline="" muted="" controls=""
+                            src="https://mptravelsltd.com/wp-content/uploads/2025/08/MP-Travels-LTD-video.mp4"></video>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- video end here -->
 
-    
+
     <!-- article start here -->
     <section class="section-pad articles-section">
         <div class="container">
-    
             <p class="text-center">
                 <span class="eyebrow">Our Articles</span>
             </p>
-    
             <h2 class="title mb-4 text-center">Be Aware of All Events</h2>
-    
             <p class="text-center articles-subtitle">
                 Connecting skilled workers with trusted employers across the Middle East, Europe, and beyond.
             </p>
-    
             <div class="swiper articleSlider">
                 <div class="swiper-wrapper">
-    
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="article-card">
@@ -239,25 +322,21 @@
                                 <span><i class="fa-solid fa-user"></i> mptravels</span>
                                 <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
                             </div>
-    
                             <div class="article-meta">
                                 <a href="#">Uncategorized</a>
                                 <span>/</span>
                                 <a href="#">12 Aug 2025</a>
                             </div>
-    
                             <h3>
                                 <a href="#">South Korea – Rising Demand for Foreign Workers in Manufacturing</a>
                             </h3>
-    
                             <p>
                                 South Korea has become one of the fastest-growing destinations for overseas workers.
                             </p>
-    
                             <a class="read-more" href="#">CONTINUE READING</a>
                         </div>
                     </div>
-    
+
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="article-card">
@@ -265,25 +344,25 @@
                                 <span><i class="fa-solid fa-user"></i> mptravels</span>
                                 <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
                             </div>
-    
+
                             <div class="article-meta">
                                 <a href="#">Uncategorized</a>
                                 <span>/</span>
                                 <a href="#">12 Aug 2025</a>
                             </div>
-    
+
                             <h3>
                                 <a href="#">Japan – High Demand for Foreign Workers</a>
                             </h3>
-    
+
                             <p>
                                 Japan has emerged as one of the most promising destinations for skilled sectors.
                             </p>
-    
+
                             <a class="read-more" href="#">CONTINUE READING</a>
                         </div>
                     </div>
-    
+
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="article-card">
@@ -291,31 +370,31 @@
                                 <span><i class="fa-solid fa-user"></i> mptravels</span>
                                 <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
                             </div>
-    
+
                             <div class="article-meta">
                                 <a href="#">Uncategorized</a>
                                 <span>/</span>
                                 <a href="#">12 Aug 2025</a>
                             </div>
-    
+
                             <h3>
                                 <a href="#">Oman – Need Foreign Workers</a>
                             </h3>
-    
+
                             <p>
                                 Oman has become a stable and attractive destination for job seekers.
                             </p>
-    
+
                             <a class="read-more" href="#">CONTINUE READING</a>
                         </div>
                     </div>
-    
+
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="article-card">
                             <div class="article-top">
                                 <span><i class="fa-solid fa-user"></i> mptravels</span>
-    
+
                                 <div>
                                     <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
                                     <a href="#" class="comment-icon">
@@ -324,45 +403,120 @@
                                     </a>
                                 </div>
                             </div>
-    
+
                             <div class="article-meta">
                                 <a href="#">Uncategorized</a>
                                 <span>/</span>
                                 <a href="#">12 Aug 2025</a>
                             </div>
-    
+
                             <h3>
                                 <a href="#">Qatar – Construction and Services</a>
                             </h3>
-    
+
                             <p>
                                 Qatar is known for modern infrastructure and international job opportunities.
                             </p>
-    
+
                             <a class="read-more" href="#">CONTINUE READING</a>
                         </div>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
             </div>
-    
+
         </div>
     </section>
     <!-- article end here -->
-    <!-- practice end here -->
+
+    <!-- members start here -->
+    <section class="member-section">
+        <div class="container">
+            <div class="row align-items-center mb-3">
+                <div class="col-lg-4">
+                    <h2 class="member-title">
+                        PROUD <br>
+                        MEMBER OF
+                    </h2>
+                </div>
+                <div class="col-lg-4">
+                    <p class="member-text">
+                        <strong>MP Travels Ltd.</strong><br><br>
+                        <span>
+                            is a proud member of recognized industry bodies,
+                            reflecting our commitment to compliance, integrity,
+                            and excellence in manpower recruitment.
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+            <!-- SLIDER -->
+            <div class="swiper memberSlider">
+                <div class="swiper-wrapper">
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/iata.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/ab.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/atab.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/dcci.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/toab.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="swiper-slide">
+                        <div class="member-logo">
+                            <img src="image/haab.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- members end here -->
 
     <footer class="pt-5">
-        <div class="container">
+        <div class="container py-5">
             <div class="row g-4">
                 <div class="col-lg-5">
-                    <h3 class="brand-logo text-white">MP <span>Travels</span></h3>
-                    <p>MP Travels Ltd. is a sister concern of Samaira Group and one of the most reputable overseas
+                    <div class="">
+                        <img src="image/LOGO-ALL-03-1.png" alt="" class="img-fluid" style="width: 300px;">
+                    </div>
+                    <p class="p-5 pb-0 text-justify">MP Travels Ltd. is a sister concern of Samaira Group and one of the
+                        most reputable overseas
                         employment agencies in Bangladesh.</p>
-                    <div class="fs-4">● ● ● ● ●</div>
+                    <div class="fs-4 ps-5 icons">
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-solid fa-globe"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <h4>Useful Links</h4>
@@ -380,12 +534,26 @@
                             class="btn btn-warning fw-bold">Subscribe</button></div>
                 </div>
             </div>
-            <hr>
-            <div class="d-flex flex-wrap justify-content-between pb-4"><span>©2025. MP Travels Ltd. All Rights
-                    Reserved.</span><span><a href="#">Privacy & Policy</a> &nbsp; <a href="#">Terms &
-                        Conditions</a></span></div>
         </div>
-    </footer><button class="back-top">↑</button>
+        <div class="pb-4 bg-color container-fluid">
+            <div class="container">
+                <div class="row align-items-center g-4 text-center">
+                    <div class="col-md-4">
+                        <span>©2025. MP Travels Ltd. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="">
+                            <a href="#">Privacy & Policy</a> &nbsp; <a href="#">Terms & Conditions</a>
+                        </span>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="dateTime"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-top">↑</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 
@@ -396,7 +564,7 @@
                 slidesPerView: 1,
                 spaceBetween: 25,
                 loop: true,
-                speed: 800,
+                speed: 1000,
 
                 autoplay: {
                     delay: 3000,
